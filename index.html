@@ -17,100 +17,102 @@
     <form id="report-form">    
       <div class="input-wrapper w50">
         <label>Tipo de visita: </label>
-        <input type="text" name="Tipo de Visita" required>
+        <input class="input" type="text" name="Tipo de Visita" required>
       </div>  
 
       <div class="input-wrapper w50">
         <label>Cliente:</label> 
-        <input type="text" name="Cliente" required>
+        <input class="input" type="text" name="Cliente" required>
       </div>  
 
       <div class="input-wrapper w50">
         <label>Endereço:</label>
-         <input type="text" name="Endereço" required>
+         <input class="input" type="text" name="Endereço" required>
       </div>  
 
       <div class="input-wrapper w50">
         <label>Cidade/Estado:</label>
-         <input type="text" name="Cidade / Estado" required>
+         <input class="input" type="text" name="Cidade / Estado" required>
       </div>  
 
       <div class="input-wrapper w50">
         <label>Pessoa de Contato:</label>
-         <input type="text" name="Pessoa de Contato" required>
+         <input class="input" type="text" name="Pessoa de Contato" required>
       </div> 
       
       <div class="input-wrapper w50">
         <label>Técnico Responsável:</label>
-         <input type="text" name="Técnico Responsável" required>
+         <input class="input" type="text" name="Técnico Responsável" required>
       </div> 
 
       <div class="input-wrapper w50">
         <label>Data Início: </label>
-          <input type="date" name="Data de Início" required>
+          <input class="input" type="date" name="Data de Início" required>
       </div> 
 
       <div class="input-wrapper w50">
         <label>Data Agendado:</label>
-         <input type="date" name="Data Agendada">
+         <input class="input" type="date" name="Data Agendada">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Data Final: </label>
-        <input type="date" name="Data Final">
+        <input class="input" type="date" name="Data Final">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Corrida:</label>
-         <input type="text" name="Corrida ">
+         <input class="input" type="text" name="Corrida ">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Pista: </label>
-        <input type="text" name="Pista">
+        <input class="input" type="text" name="Pista">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Localização:</label>
-         <input type="text" name="Localização">
+         <input class="input" type="text" name="Localização">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Data:</label>
-         <input type="date" name="Data">
+         <input class="input" type="date" name="Data">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Quantos Pilotos Arai:</label>
-         <input type="number" name="Pilotos Arai">
+         <input class="input" type="number" name="Pilotos Arai">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Agenda:</label>
-         <input type="text" name="Agenda">
+         <input class="input" type="text" name="Agenda">
       </div> 
 
       <div class="input-wrapper w50">
-        <label>Condições Climáticas:</label> <input type="text" name="Condições Climáticas">
+        <label>Condições Climáticas:</label> 
+        <input class="input" type="text" name="Condições Climáticas">
       </div> 
 
       <div class="input-wrapper w50">
         <label>Comentários Gerais:</label>
-         <textarea name="Comentários Gerais"></textarea>
+         <textarea class="input" name="Comentários Gerais"></textarea>
       </div> 
 
       <div class="input-wrapper w50">
         <label>Quantos Pilotos Outra Marca de Capacete: </label>
-        <input type="number" name="Pilotos de outra marca">
+        <input class="input" type="number" name="Pilotos de outra marca">
       </div> 
 
       <div class="input-wrapper w50">
-        <label>Acidentes:</label> <textarea name="Acidentes"></textarea>
+        <label>Acidentes:</label>
+        <textarea class="input" name="Acidentes"></textarea>
       </div> 
 
       <div class="input-wrapper w50">
         <label>Fotos:</label>
-         <input type="file" name="fotos" multiple accept="image/jpeg, image/png, image/webp">
+         <input id="fotos" class="input" type="file" name="fotos" multiple accept="image/jpeg, image/png, image/webp">
       </div> 
 
      
@@ -159,7 +161,7 @@
   </div><!--IMPRESAAO-->
 
   <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
 
 </body>
 </html>

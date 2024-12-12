@@ -71,6 +71,7 @@ form .input-wrapper label{
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
+  display: none;
 }
 #Impressão .cabecalho{
   width: 100%;
@@ -131,5 +132,6 @@ form .input-wrapper label{
 }
 #Impressão  .imagens img{
   width: calc(33% - 5px);
+  height: auto;
   object-fit: contain;
 }
