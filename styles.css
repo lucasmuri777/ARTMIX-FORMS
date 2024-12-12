@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, 'sans-serif';
+}
+body,html{
+  height: 100%;
+}
+.form-perso-pdf h1{
+  color: #005D98;
+  padding: 10px 0 50px 0;
+  width: 100%;
+  text-align: center;
+}
+.form-perso-pdf #generate-pdf{
+  width: 100%;
+  max-width: 200px;
+  background-color: #007BFF;
+  color: white;
+  border: 0;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 1%;
+}
+form#report-form{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+form .input-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5px;
+}
+form .input-wrapper.w50{
+  width: calc(50% - 5px);
+  border-radius: 10px;
+}
+form .input-wrapper input, form .input-wrapper textarea{
+  width: 100%;
+  padding: 5px 10px;
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #005D98;
+  max-height: 100px;
+  font-size: 18px;
+}
+form .input-wrapper label{
+  padding: 5px 10px;
+  background-color: #005D98;
+  border-radius: 10px;
+  color: white;
+  max-height: 30px;
+} 
+
+/*IMPRESSAO*/
+#Impressão{
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+#Impressão .cabecalho{
+  width: 100%;
+  height: 90px;
+  background-color: #005D98;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 20px;
+}
+#Impressão .cabecalho div.logos{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+#Impressão .cabecalho img{
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+#Impressão .campos{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+#Impressão .campos .conteudo-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#Impressão .campos .conteudo-wrapper.w50{
+  width: calc(50% - 5px);
+}
+#Impressão .campos .conteudo-wrapper .campo{
+  padding: 10px 20px;
+  background-color: #005D98;
+  color: white;
+  width: 40%;
+}
+#Impressão .campos .conteudo-wrapper .resposta{
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  width: 60%;
+}
+#Impressão  .imagens{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 1px solid #005D98;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+#Impressão  .imagens img{
+  width: calc(33% - 5px);
+  object-fit: contain;
+}

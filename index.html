@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de PDF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  
+
+
+
+  <div class="container form-perso-pdf">
+    <h1>Formulário de Relatório</h1>
+    <form id="report-form">    
+      <div class="input-wrapper w50">
+        <label>Tipo de visita: </label>
+        <input type="text" name="Tipo de Visita" required>
+      </div>  
+
+      <div class="input-wrapper w50">
+        <label>Cliente:</label> 
+        <input type="text" name="Cliente" required>
+      </div>  
+
+      <div class="input-wrapper w50">
+        <label>Endereço:</label>
+         <input type="text" name="Endereço" required>
+      </div>  
+
+      <div class="input-wrapper w50">
+        <label>Cidade/Estado:</label>
+         <input type="text" name="Cidade / Estado" required>
+      </div>  
+
+      <div class="input-wrapper w50">
+        <label>Pessoa de Contato:</label>
+         <input type="text" name="Pessoa de Contato" required>
+      </div> 
+      
+      <div class="input-wrapper w50">
+        <label>Técnico Responsável:</label>
+         <input type="text" name="Técnico Responsável" required>
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Data Início: </label>
+          <input type="date" name="Data de Início" required>
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Data Agendado:</label>
+         <input type="date" name="Data Agendada">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Data Final: </label>
+        <input type="date" name="Data Final">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Corrida:</label>
+         <input type="text" name="Corrida ">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Pista: </label>
+        <input type="text" name="Pista">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Localização:</label>
+         <input type="text" name="Localização">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Data:</label>
+         <input type="date" name="Data">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Quantos Pilotos Arai:</label>
+         <input type="number" name="Pilotos Arai">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Agenda:</label>
+         <input type="text" name="Agenda">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Condições Climáticas:</label> <input type="text" name="Condições Climáticas">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Comentários Gerais:</label>
+         <textarea name="Comentários Gerais"></textarea>
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Quantos Pilotos Outra Marca de Capacete: </label>
+        <input type="number" name="Pilotos de outra marca">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Acidentes:</label> <textarea name="Acidentes"></textarea>
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Fotos:</label>
+         <input type="file" name="fotos" multiple accept="image/jpeg, image/png, image/webp">
+      </div> 
+
+     
+        <button type="button" id="generate-pdf">Gerar PDF</button>
+
+    </form>
+  </div>
+
+  <div id="Impressão"><!--IMPRESAAO-->
+
+    <div class="cabecalho">
+      <div class="logos">
+        <img src="./logo.png" alt="logo" />
+        <img src="./Arai-Logo.png" alt="logo" />
+      </div>
+      <h2>Relatório de corrida</h2>
+    </div>
+
+    <div class="campos">
+        <div class="conteudo-wrapper">
+          <div class="campo">Input name</div>
+          <div class="resposta">Conteudo do campo</div>
+        </div>
+        <div class="conteudo-wrapper">
+          <div class="campo">Input name</div>
+          <div class="resposta">Conteudo do campo</div>
+        </div>
+        <div class="conteudo-wrapper w50">
+          <div class="campo">Input name</div>
+          <div class="resposta">Conteudo do campo</div>
+        </div>
+        <div class="conteudo-wrapper w50">
+          <div class="campo">Input name</div>
+          <div class="resposta">Conteudo do campo</div>
+        </div>
+    </div>
+    <div class="imagens">
+      <img src="./logo.png" alt="logo" />
+      <img src="./Arai-Logo.png" alt="logo" />
+      <img src="./logo.png" alt="logo" />
+      <img src="./Arai-Logo.png" alt="logo" />
+      <img src="./logo.png" alt="logo" />
+      <img src="./Arai-Logo.png" alt="logo" />
+    </div>
+    
+  </div><!--IMPRESAAO-->
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
