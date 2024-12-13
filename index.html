@@ -11,14 +11,41 @@
   
 
 
-
-  <div class="container form-perso-pdf">
+  <div class="container">
+    <div class="content-box">
+      a
+    </div>
+  
+  <div class="form-perso-pdf">
     <h1>Formulário de Relatório</h1>
-    <form id="report-form">    
+    <h2>Crie seu relatório e baixe em PDF</h2>
+    <form id="report-form"> 
+
       <div class="input-wrapper w50" style="display: none;">
         <label>Tipo de visita: </label>
         <input class="input" value='Comercial'  type="text" name="Tipo de Visita" required>
       </div>  
+
+      <div class="input-wrapper w50">
+        <label>Data do Evento: </label>
+        <input class="input" type="date" name="Data do Evento">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label> Evento/Corrida:</label>
+         <input class="input" type="text" name="Evento/Corrida">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Pista: </label>
+        <input class="input" type="text" name="Pista">
+      </div> 
+
+      <div class="input-wrapper w50">
+        <label>Localização:</label>
+         <input class="input" type="text" name="Localização">
+      </div> 
+
 
 
       <div class="input-wrapper w50">
@@ -60,27 +87,6 @@
       <div class="input-wrapper w50">
         <label>Técnico Responsável:</label>
          <input class="input" type="text" name="Técnico Responsável" required>
-      </div> 
-
-
-      <div class="input-wrapper w50">
-        <label>Data do Evento: </label>
-        <input class="input" type="date" name="Data do Evento">
-      </div> 
-
-      <div class="input-wrapper w50">
-        <label> Evento/Corrida:</label>
-         <input class="input" type="text" name="Evento/Corrida">
-      </div> 
-
-      <div class="input-wrapper w50">
-        <label>Pista: </label>
-        <input class="input" type="text" name="Pista">
-      </div> 
-
-      <div class="input-wrapper w50">
-        <label>Localização:</label>
-         <input class="input" type="text" name="Localização">
       </div> 
 
       <div class="input-wrapper w50">
@@ -132,6 +138,8 @@
         <button type="button" id="generate-pdf">Gerar PDF</button>
       </div>
     </form>
+  </div>
+
   </div>
 
   <div id="Impressão"><!--IMPRESAAO-->
