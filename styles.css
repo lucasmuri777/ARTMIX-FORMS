@@ -162,3 +162,17 @@ form .input-wrapper label{
   height: auto;
   object-fit: contain;
 }
+
+@media screen and (max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+  .container .content-box{
+    width: 100%;
+    min-height: 500px;
+  }
+  .container .form-perso-pdf{
+    width: 100%;
+    padding: 50px 30px;
+  }
+}
