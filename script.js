@@ -25,12 +25,15 @@ generateBtn.addEventListener('click', () => {
     imagensCampo.innerHTML = '';
 
     for (let i = 0; i < formDataAll.length; i++) {
+        
         const e = formDataAll[i];
+        console.log(e)
         if (e.value.trim() === '') {
             alert(`O campo ${e.name} está vazio!`);
             displayImpressao = false;
             break; // Interrompe o loop
         }
+        
     
         if (e.name !== 'fotos') {
             campos.innerHTML += `

@@ -47,7 +47,7 @@ form .input-wrapper.w50{
   width: calc(50% - 5px);
   border-radius: 10px;
 }
-form .input-wrapper input, form .input-wrapper textarea{
+form .input-wrapper input, form .input-wrapper textarea, form .input-wrapper select{
   width: 100%;
   padding: 5px 10px;
   outline: none;
